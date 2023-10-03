@@ -797,6 +797,11 @@ body {
     margin: 0 auto;
     padding: 0 8rem;
 }
+.user-view__tour-container {
+    max-width: 68rem;
+    margin: 0 auto;
+    padding: 0 8rem;
+}
 
 .footer {
     background-color: #f7f7f7;
@@ -1081,6 +1086,98 @@ body {
     grid-gap: 7rem;
 }
 
+.booked-tour-card {
+    overflow: hidden;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#7dd56f),
+        to(#28b487)
+    );
+    height: 10rem;
+    width: 50rem;
+    padding: 4rem;
+    background-color: #f7f7f7;
+    border-radius: 25px;
+    -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    scroll-snap-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 5rem;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.booked-tour-card:hover {
+    transform: scale(1.03);
+    -webkit-box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.15);
+}
+
+.booked-card__picture {
+    position: relative;
+    bottom: 10rem;
+    right: 21rem;
+    -webkit-clip-path: circle(20%);
+    clip-path: circle(20%);
+    height: 22rem;
+    -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.booked-card__details {
+    position: relative;
+    bottom: 27rem;
+    right: 0rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 1.75rem;
+    grid-column-gap: 4rem;
+    padding: 2.5rem 3rem;
+}
+.booked-card__name {
+    position: sticky;
+    font-size: 1.5rem;
+    margin-top: -1rem;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    color: #f1f1f1;
+}
+.booked-card__text {
+    position: sticky;
+    font-size: 1.5rem;
+    margin-top: -1rem;
+    margin-bottom: 0.75rem;
+    color: #f1f1f1;
+}
+.booking-btn {
+    position: relative;
+    bottom: 6rem;
+    left: 27rem;
+    -webkit-clip-path: polygon;
+    clip-path: polygon(68% 0, 100% 0, 100% 100%, 14% 100%);
+    background-color:#2e864b;
+    color: #fff;
+    height: 90rem;
+    display: block;
+    height: 450%;
+    text-align: calc(100% -2px);
+}
 .card {
     border-radius: 3px;
     overflow: hidden;
