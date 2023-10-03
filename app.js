@@ -28,12 +28,6 @@ app.set('views', path.join(__dirname, 'views'));
 // Implement CORS
 app.use(cors());
 
-// Access-Control-Allow-Origin *
-
-// app.user(cors({
-//     origin: 'https://www.natours.com'
-// }))
-
 app.options('*', cors());
 
 // Serving static files
