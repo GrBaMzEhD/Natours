@@ -22,7 +22,7 @@ router.use(authController.isLoggedIn);
 
 router.get(
     '/',
-    bookingController.createBookingCheckout,
+    // bookingController.createBookingCheckout,
     viewsController.getOverview,
 );
 router.get('/tour/:slug', viewsController.getTour);
