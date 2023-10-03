@@ -1083,7 +1083,7 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5rem;
+    grid-gap: 7rem;
 }
 
 .booked-tour-card {
@@ -1135,8 +1135,8 @@ body {
     position: relative;
     bottom: 10rem;
     right: 21rem;
-    -webkit-clip-path: circle(20%);
-    clip-path: circle(20%);
+    -webkit-clip-path: circle;
+    clip-path: circle(23%);
     height: 22rem;
     -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
@@ -1154,8 +1154,8 @@ body {
     right: 0rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row-gap: 1.75rem;
-    grid-column-gap: 4rem;
+    grid-row-gap: 0rem;
+    grid-column-gap: 2rem;
     padding: 2.5rem 3rem;
 }
 .booked-card__name {
@@ -1177,7 +1177,7 @@ body {
 .booking-btn {
     position: relative;
     height: 10rem;
-    bottom: 7.8rem;
+    bottom: 6.05rem;
     width: 12.5rem;
     left: 30.5rem;
     padding: 4rem;

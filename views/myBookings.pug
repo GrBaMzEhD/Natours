@@ -43,5 +43,7 @@ block content
                                         p.booked-card__text 
                                             span= `Price:   £${tour.price}`
                                         a.btn--green.btn--small.booking-btn(href=`/tour/${tour.slug}`)
+                                        p.booked-card__text
+                                            span= `Date booked: ${tour.startDates[0].toLocaleString('en-us', {dateStyle: 'long'})}`
 
 

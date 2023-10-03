@@ -5,7 +5,7 @@ import { displayMap } from './mapbox';
 import { login, logout, signup } from './login';
 import { updateSettings } from './updateSettings';
 import { bookTour } from './stripe';
-import { showAlert } from './alerts';
+import { hideAlert, showAlert } from './alerts';
 
 // DOM ELEMENTS
 const mapBox = document.getElementById('map');
@@ -86,4 +86,5 @@ if (bookBtn)
     });
 
 const alertMessage = document.querySelector('body').dataset.alert;
-if (alertMessage) showAlert('success', alertMessage, 20)
+const isAlertEmty = alertMessage.isEmpty();
+if (!isAlertEmty) showAlert('success', alertMessage, 20)
